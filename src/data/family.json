@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "name": "Vương Quang Điền",
+    "birth": 1940,
+    "spouseId": 2,
+    "childrenIds": [3,4]
+  },
+  {
+    "id": 2,
+    "name": "Nguyễn Thị Nhạnh",
+    "birth": 1970,
+    "spouseId": 1
+  },
+  {
+    "id": 3,
+    "name": "Vương Quang Thắng",
+    "birth": 2000
+  },
+  {
+    "id": 4,
+    "name": "Vương Quang Tươi",
+    "birth": 2002
+  }
+]
