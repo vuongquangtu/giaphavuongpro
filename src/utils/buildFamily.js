@@ -1,18 +1,26 @@
 export function buildFamily(data) {
-  const map = {}
-  data.forEach(p => (map[p.id] = { ...p }))
+  const map = {};
+  const visited = new Set();
+
+  data.forEach(p => (map[p.id] = { ...p }));
 
   function buildNode(person) {
-    const spouse = person.spouseId ? map[person.spouseId] : null
+    if (!person || visited.has(person.id)) return null;
+
+    visited.add(person.id);
+
+    const spouse = person.spouseId ? map[person.spouseId] : null;
+
+    if (spouse) visited.add(spouse.id);
 
     return {
       person,
       spouse,
-      children: (person.childrenIds || []).map(id =>
-        buildNode(map[id])
-      )
-    }
+      children: (person.childrenIds || [])
+        .map(id => buildNode(map[id]))
+        .filter(Boolean)
+    };
   }
 
-  return buildNode(map[1])
+  return buildNode(map[1]);
 }
