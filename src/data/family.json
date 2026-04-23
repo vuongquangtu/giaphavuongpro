@@ -24,7 +24,7 @@
 	"childrenIds": [9, 10]
   },
   {
-    "id": 4.1,
+    "id": 41,
     "name": "Phan Thị Ngoan",
     "birth": 1964,
 	"spouseId": 4
@@ -36,7 +36,7 @@
 	"childrenIds": [11, 12]
   },
   {
-    "id": 5.1,
+    "id": 51,
     "name": "Nguyễn Thị Thế",
     "birth": 1964,
 	"spouseId": 5
@@ -55,7 +55,7 @@
     "id": 8,
     "name": "Vương Quang Hoa",
     "birth": 2002
-  ,
+  },
   {
     "id": 9,
     "name": "Vương Quang Tuấn",
